@@ -43,7 +43,7 @@ describe('givenDecimal8WhenConvertThen10', function () {
     })
 })
 
-describe('givenDecimal95WhenConvertThen1137', function () {
+describe('givenDecimal95WhenConvertThen137', function () {
     it('convert(8) = 10', function () {
         //Given
         var a = 95;
@@ -56,3 +56,18 @@ describe('givenDecimal95WhenConvertThen1137', function () {
         assert.strictEqual(expectedResult, actualResult);
     })
 })
+
+describe('givenDecimal2048WhenConvertThen4000', function () {
+    it('convert(8) = 10', function () {
+        //Given
+        var a = 2048;
+        var expectedResult = 4000;
+
+        // When
+        var actualResult = octalConverterFunctions.convert(a);
+
+        // Then
+        assert.strictEqual(expectedResult, actualResult);
+    })
+})
+
